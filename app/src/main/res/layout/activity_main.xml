@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_padding">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/vertical_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edit_team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:contentDescription="@string/team_a"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/team_a"
+                android:textColor="@color/team_text"
+                android:textSize="@dimen/team_name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/score_a"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/score_a"
+                    android:textColor="@color/score_text"
+                    android:textSize="@dimen/score_text" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_weight"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/shot"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneShotForTeamA"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/shot"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/shot_card_team_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/shot_stat"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneShotForTeamA"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/shot_stat"
+                    android:textSize="@dimen/stats_text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_weight"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/fouls"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneFoulForTeamA"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/fouls"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/fouls_team_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/fouls_stat"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneFoulForTeamA"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/fouls_stat"
+                    android:textSize="@dimen/stats_text" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_top">
+
+
+                <TextView
+                    android:id="@+id/yellow_card_team_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/small_padding"
+                    android:background="@color/yellow_card_background"
+                    android:contentDescription="@string/card_a"
+
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneYellowCardForTeamA"
+                    android:padding="@dimen/very_small_padding"
+                    android:text="@string/card_a"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/red_card_team_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/small_padding"
+                    android:background="@color/red_card_background"
+
+
+                    android:contentDescription="@string/card_a"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneRedCardForTeamA"
+                    android:padding="@dimen/very_small_padding"
+                    android:text="@string/card_a"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/stats_text"
+
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/line_margin_bottom"
+            android:layout_marginTop="@dimen/line_margin_top"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="@dimen/vertical_weight"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium_padding"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edit_team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/team_b"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:inputType="text"
+
+                android:padding="@dimen/medium_padding"
+                android:text="@string/team_b"
+                android:textColor="@color/team_text"
+                android:textSize="@dimen/team_name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/score_b"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/score_b"
+                    android:textColor="@color/score_text"
+                    android:textSize="@dimen/score_text"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_weight"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/shot"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneShotForTeamB"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/shot"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/shot_card_team_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/shot_stat"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneShotForTeamB"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/shot_stat"
+                    android:textSize="@dimen/stats_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_weight"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/fouls"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneFoulForTeamB"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/fouls"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/fouls_team_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/fouls_stat"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneFoulForTeamB"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/fouls_stat"
+                    android:textSize="@dimen/stats_text" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_top">
+
+
+                <TextView
+                    android:id="@+id/yellow_card_team_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/small_padding"
+                    android:background="@color/yellow_card_background"
+                    android:contentDescription="@string/card_b"
+
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneYellowCardForTeamB"
+                    android:padding="@dimen/very_small_padding"
+                    android:text="@string/card_b"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/stats_text" />
+
+
+                <TextView
+                    android:id="@+id/red_card_team_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_padding"
+                    android:background="@color/red_card_background"
+                    android:contentDescription="@string/card_b"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="addOneRedCardForTeamB"
+                    android:padding="@dimen/very_small_padding"
+                    android:text="@string/card_b"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/stats_text"
+
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/border_bt_black"
+
+        android:contentDescription="@string/new_game"
+        android:onClick="resetScore"
+        android:text="@string/new_game"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

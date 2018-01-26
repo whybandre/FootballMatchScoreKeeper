@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name"> Football Match Score Keeper</string>
+
+
+    <!-- Title for each team. -->
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+
+    <!-- Score as 0 -->
+    <string name="score_a">0</string>
+    <string name="score_b">0</string>
+
+    <!-- Stats for -->
+    <string name="shot">Shot</string>
+    <string name="shot_stat">+</string>
+    <string name="fouls">Fouls</string>
+    <string name="fouls_stat">+</string>
+
+
+    <!-- Cards as 0 -->
+    <string name="card_a">0</string>
+    <string name="card_b">0</string>
+
+
+    <!-- Reset New Game Button -->
+    <string name="new_game">New\nGame</string>
+
+
+</resources>

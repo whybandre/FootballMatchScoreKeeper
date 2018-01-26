@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#558B2F</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <color name="background_app">#E8F5E9</color>
+
+
+    <color name="red_card_background">#E02000</color>
+    <color name="yellow_card_background">#FFDB0D</color>
+
+    <color name="card_text">#fff</color>
+
+
+    <color name="team_text">#616161</color>
+    <color name="score_text">#000000</color>
+
+
+</resources>
