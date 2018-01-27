@@ -153,7 +153,7 @@
 
                     android:fontFamily="sans-serif-light"
                     android:onClick="addOneYellowCardForTeamA"
-                    android:padding="@dimen/very_small_padding"
+                    android:padding="@dimen/small_padding"
                     android:text="@string/card_a"
                     android:textColor="@color/card_text"
                     android:textSize="@dimen/stats_text" />
@@ -171,7 +171,7 @@
                     android:contentDescription="@string/card_a"
                     android:fontFamily="sans-serif-light"
                     android:onClick="addOneRedCardForTeamA"
-                    android:padding="@dimen/very_small_padding"
+                    android:padding="@dimen/small_padding"
                     android:text="@string/card_a"
                     android:textColor="@color/card_text"
                     android:textSize="@dimen/stats_text"
@@ -324,7 +324,7 @@
 
                     android:fontFamily="sans-serif-light"
                     android:onClick="addOneYellowCardForTeamB"
-                    android:padding="@dimen/very_small_padding"
+                    android:padding="@dimen/small_padding"
                     android:text="@string/card_b"
                     android:textColor="@color/card_text"
                     android:textSize="@dimen/stats_text" />
@@ -339,7 +339,7 @@
                     android:contentDescription="@string/card_b"
                     android:fontFamily="sans-serif-light"
                     android:onClick="addOneRedCardForTeamB"
-                    android:padding="@dimen/very_small_padding"
+                    android:padding="@dimen/small_padding"
                     android:text="@string/card_b"
                     android:textColor="@color/card_text"
                     android:textSize="@dimen/stats_text"
