@@ -67,13 +67,12 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(savedFoulsTeamA, foulsTeamA);
         savedInstanceState.putInt(savedFoulsTeamB, foulsTeamB);
 
-
         super.onSaveInstanceState(savedInstanceState);
     }
 
     /**
      * @param savedInstanceState Restoring Variables
-     *                           More reading https://developer.android.com/guide/components/activities/activity-lifecycle.html
+     * More reading https://developer.android.com/guide/components/activities/activity-lifecycle.html
      */
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -105,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
         displayShotsForTeamA(shotTeamA);
         displayShotsForTeamB(shotTeamB);
-
 
         //Fouls
         foulsTeamA = savedInstanceState.getInt(savedFoulsTeamA);

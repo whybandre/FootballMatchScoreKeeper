@@ -5,13 +5,11 @@
     android:background="@color/background_app"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_top"
         android:orientation="horizontal">
-
 
         <LinearLayout
             android:layout_width="@dimen/vertical_weight"
@@ -19,7 +17,6 @@
             android:layout_marginRight="@dimen/medium_padding"
             android:layout_weight="1"
             android:orientation="vertical">
-
 
             <EditText
                 android:id="@+id/edit_team_a"
@@ -38,10 +35,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border"
-
-                >
-
+                android:background="@drawable/border">
 
                 <TextView
                     android:id="@+id/team_a_score"
@@ -53,9 +47,7 @@
                     android:onClick="addOneForTeamA"
                     android:text="@string/score_a"
                     android:textColor="@color/score_text"
-                    android:textSize="@dimen/score_text"
-
-                    />
+                    android:textSize="@dimen/score_text" />
 
                 <TextView
                     android:id="@+id/red_card_team_a"
@@ -70,10 +62,7 @@
                     android:padding="@dimen/very_small_padding"
                     android:text="@string/card_a"
                     android:textColor="@color/card_text"
-                    android:textSize="@dimen/stats_text"
-
-
-                    />
+                    android:textSize="@dimen/stats_text" />
 
                 <TextView
                     android:id="@+id/yellow_card_team_a"
@@ -87,22 +76,16 @@
                     android:padding="@dimen/very_small_padding"
                     android:text="@string/card_a"
                     android:textColor="@color/card_text"
-
                     android:textSize="@dimen/stats_text" />
 
-
             </RelativeLayout>
-
 
             <LinearLayout
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_padding"
-
-
                 android:background="@drawable/border"
-
                 android:orientation="horizontal">
 
 
@@ -133,9 +116,7 @@
                     android:onClick="addOneShotForTeamA"
                     android:padding="@dimen/small_padding"
                     android:text="@string/shot_stat"
-                    android:textSize="@dimen/stats_text"
-
-                    />
+                    android:textSize="@dimen/stats_text" />
 
 
                 <TextView
@@ -152,7 +133,6 @@
                     android:textSize="@dimen/stats_text"
                     android:textStyle="bold" />
 
-
                 <TextView
                     android:id="@+id/fouls_team_a"
                     android:layout_width="@dimen/vertical_weight"
@@ -166,7 +146,6 @@
                     android:text="@string/fouls_stat"
                     android:textSize="@dimen/stats_text" />
 
-
             </LinearLayout>
 
 
@@ -175,9 +154,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/bt_y_r_landscape"
-
                 android:layout_marginTop="@dimen/small_padding"
-
                 android:background="@drawable/border"
                 android:orientation="horizontal">
 
@@ -200,10 +177,7 @@
                     android:contentDescription="@string/fouls_stat"
                     android:onClick="addOneRedCardForTeamA"
                     android:text="@string/fouls_stat"
-                    android:textColor="@color/card_text"
-
-
-                    />
+                    android:textColor="@color/card_text" />
 
             </LinearLayout>
 
@@ -218,7 +192,6 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-
             <EditText
                 android:id="@+id/edit_team_b"
                 android:layout_width="match_parent"
@@ -227,7 +200,6 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:inputType="text"
-
                 android:padding="@dimen/medium_padding"
                 android:text="@string/team_b"
                 android:textColor="@color/team_text"
@@ -237,7 +209,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border">
-
 
                 <TextView
                     android:id="@+id/team_b_score"
@@ -249,9 +220,7 @@
                     android:onClick="addOneForTeamB"
                     android:text="@string/score_b"
                     android:textColor="@color/score_text"
-                    android:textSize="@dimen/score_text"
-
-                    />
+                    android:textSize="@dimen/score_text" />
 
                 <TextView
                     android:id="@+id/red_card_team_b"
@@ -266,10 +235,7 @@
                     android:padding="@dimen/very_small_padding"
                     android:text="@string/card_b"
                     android:textColor="@color/card_text"
-                    android:textSize="@dimen/stats_text"
-
-
-                    />
+                    android:textSize="@dimen/stats_text" />
 
                 <TextView
                     android:id="@+id/yellow_card_team_b"
@@ -281,7 +247,6 @@
                     android:layout_toRightOf="@+id/red_card_team_b"
                     android:background="@color/yellow_card_background"
                     android:contentDescription="@string/card_b"
-
                     android:fontFamily="sans-serif-light"
                     android:padding="@dimen/very_small_padding"
                     android:text="@string/card_b"
@@ -296,10 +261,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_padding"
-
-
                 android:background="@drawable/border"
-
                 android:orientation="horizontal">
 
 
@@ -330,10 +292,7 @@
                     android:onClick="addOneShotForTeamB"
                     android:padding="@dimen/small_padding"
                     android:text="@string/shot_stat"
-
-                    android:textSize="@dimen/stats_text"
-
-                    />
+                    android:textSize="@dimen/stats_text" />
 
 
                 <TextView
@@ -373,9 +332,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/bt_y_r_landscape"
-
                 android:layout_marginTop="@dimen/small_padding"
-
                 android:background="@drawable/border"
                 android:orientation="horizontal">
 
@@ -398,15 +355,11 @@
                     android:contentDescription="@string/fouls_stat"
                     android:onClick="addOneYellowCardForTeamB"
                     android:text="@string/fouls_stat"
-                    android:textColor="@color/card_text"
-
-                    />
+                    android:textColor="@color/card_text" />
 
             </LinearLayout>
 
-
         </LinearLayout>
-
 
     </LinearLayout>
 
@@ -422,6 +375,5 @@
         android:onClick="resetScore"
         android:text="@string/new_game"
         android:textAlignment="center" />
-
 
 </RelativeLayout>
