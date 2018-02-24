@@ -323,7 +323,6 @@
                     android:text="@string/fouls_stat"
                     android:textSize="@dimen/stats_text" />
 
-
             </LinearLayout>
 
 
