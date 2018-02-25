@@ -1,11 +1,33 @@
 <resources>
 
+
+    <!-- SUGGESTION from a Review
+Did you know that styles have an attribute called “parent” that let you inherit common attribute.
+
+You could, for example, define a style called “wrap_content” that defines height and width has "wrap_content" and inherit from it,
+so you do not have to repeat those two attributes again.
+Check the documentation for more info:
+
+https://developer.android.com/guide/topics/ui/look-and-feel/themes.html -->
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!-- SUGGESTION
+Did you know that styles have an attribute called “parent” that let you inherit common attribute.
+
+You could, for example, define a style called “wrap_content” that defines height and width has "wrap_content" and inherit from it,
+ so you do not have to repeat those two attributes again.
+Check the documentation for more info:
+
+https://developer.android.com/guide/topics/ui/look-and-feel/themes.html -->
+
+
     </style>
 
 </resources>
